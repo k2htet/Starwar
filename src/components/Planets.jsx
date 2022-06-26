@@ -10,7 +10,7 @@ const Planets = () => {
 
   const { data, status, isFetching } = useQuery(
     ["planets", planetsPage],
-    () => fetchData(`http://swapi.dev/api/planets`, planetsPage, null),
+    () => fetchData(`https://swapi.dev/api/planets`, planetsPage, null),
     {
       staleTime: 3000,
       keepPreviousData: true,

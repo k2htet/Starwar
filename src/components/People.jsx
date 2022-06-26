@@ -8,7 +8,7 @@ const People = () => {
 
   const { data, status, isFetching } = useQuery(
     ["people", peoplePage],
-    () => fetchData(`http://swapi.dev/api/people`, null, peoplePage),
+    () => fetchData(`https://swapi.dev/api/people`, null, peoplePage),
     {
       staleTime: 3000,
       keepPreviousData: true,
